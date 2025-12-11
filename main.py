@@ -1,5 +1,17 @@
 from fastapi import FastAPI
 import pickle
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "Bienvenue sur mon API Jalon 2 🚀"}
+
+
+
+
+from fastapi import FastAPI
+import pickle
 import numpy as np
 
 app = FastAPI()
